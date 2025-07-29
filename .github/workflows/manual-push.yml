@@ -27,9 +27,9 @@ jobs:
         id: set-repo
         run: |
           if [[ "${{ github.event.inputs.environment }}" == "production" ]]; then
-            echo "repo=test/myapp-prod" >> $GITHUB_OUTPUT
+            echo "repo=joerozen/myapp-prod" >> $GITHUB_OUTPUT
           else
-            echo "repo=test/myapp-staging" >> $GITHUB_OUTPUT
+            echo "repo=joerozen/myapp-staging" >> $GITHUB_OUTPUT
           fi
 
       - name: Log in to DockerHub
